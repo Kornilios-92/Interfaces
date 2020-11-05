@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Interfaces
 {
-    interface IMotorBikeActions
+    interface IAutoMobileActions
     {
-
-        void Break();
+        void SteerLeft();
+        void SteerRight();
+        abstract public void Steer(bool steerLeft);
     }
 }

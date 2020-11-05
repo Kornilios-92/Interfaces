@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interfaces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Models
 {
-    class Boat : AutoMobile
+    class Boat : AutoMobile, IAutoMobileActions, IBoatActions
     {
 
         public Boat()
@@ -19,14 +20,24 @@ namespace Interfaces.Models
             this.IsOn = IsOn;
         }
 
-        public override void SteerLeft()
+        public void SteerLeft()
         {
             throw new NotImplementedException();
         }
 
-        public override void Reverse()
+        public void Reverse()
         {
             Console.WriteLine("The boat is reversing");
+        }
+
+        public void SteerRight()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Steer(bool steerLeft)
+        {
+            throw new NotImplementedException();
         }
     }
 }

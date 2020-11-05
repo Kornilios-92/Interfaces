@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interfaces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Models
 {
-    class MotorBike : AutoMobile
+    class MotorBike : AutoMobile, IAutoMobileActions, IMotorBikeActions
     {
 		
 		public MotorBike()
@@ -19,7 +20,7 @@ namespace Interfaces.Models
 			this.IsOn = IsOn;
 		}
 
-		public override void SteerLeft()
+		public void SteerLeft()
 		{
 			Console.WriteLine("The motorbike is steering left");
 		}
@@ -29,5 +30,14 @@ namespace Interfaces.Models
 			Console.WriteLine("The motorbike is breaking");
 		}
 
+		public void SteerRight()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Steer(bool steerLeft)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

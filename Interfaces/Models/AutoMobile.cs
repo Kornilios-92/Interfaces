@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interfaces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Models
 {
-    abstract class AutoMobile
+    class AutoMobile
     {
 		// field - ALWAYS private
 		private bool _isOn;
@@ -38,12 +39,5 @@ namespace Interfaces.Models
 		{
 			this._isOn = false;
 		}
-
-		abstract public void SteerLeft();
-		//abstract public void SteerRight();
-		//abstract public void Steer(bool steerLeft);
-
-		abstract public void Reverse();
-		
 	}
 }
