@@ -12,7 +12,7 @@ namespace Interfaces
         static void Main(string[] args)
         {
             // NO NO can't have instances of an abstract class or interface
-            AutoMobile auto = new AutoMobile();
+            //AutoMobile auto = new AutoMobile();
 
             //Console.WriteLine("car c");
             //Car c = new Car(true);

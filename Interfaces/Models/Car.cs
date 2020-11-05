@@ -22,5 +22,15 @@ namespace Interfaces.Models
 		{
 			Console.WriteLine("The car is steering left");
 		}
+
+		public void Break()
+		{
+			Console.WriteLine("The car is breaking");
+		}
+
+		public override void Reverse()
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

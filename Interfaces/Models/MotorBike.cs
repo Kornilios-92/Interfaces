@@ -24,5 +24,10 @@ namespace Interfaces.Models
 			Console.WriteLine("The motorbike is steering left");
 		}
 
+		public void Break()
+		{
+			Console.WriteLine("The motorbike is breaking");
+		}
+
 	}
 }

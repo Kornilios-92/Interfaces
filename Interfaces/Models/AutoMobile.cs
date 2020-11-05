@@ -42,6 +42,8 @@ namespace Interfaces.Models
 		abstract public void SteerLeft();
 		//abstract public void SteerRight();
 		//abstract public void Steer(bool steerLeft);
+
+		abstract public void Reverse();
 		
 	}
 }
